@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JMB - Subdomain Gratis untuk Komunitas IT Indonesia</title>
+    <meta name="description" content="JMB menyediakan subdomain gratis (.jmb.my.id) untuk komunitas IT Indonesia secara non-profit.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Konfigurasi Tailwind & Custom Styles -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            900: '#1e3a8a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Utilitas tambahan jika diperlukan */
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-700 bg-slate-50 antialiased selection:bg-brand-200 selection:text-brand-900">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-white/90 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <div class="w-8 h-8 bg-brand-600 rounded-lg flex items-center justify-center text-white font-bold text-lg">J</div>
+                    <span class="font-bold text-xl text-gray-900 tracking-tight">JMB</span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#features" class="text-gray-600 hover:text-brand-600 font-medium transition">Fitur</a>
+                    <a href="#rules" class="text-gray-600 hover:text-brand-600 font-medium transition">Aturan</a>
+                    <a href="#status" class="text-gray-600 hover:text-brand-600 font-medium transition">Status</a>
+                    <a href="#register" class="bg-brand-600 hover:bg-brand-700 text-white px-5 py-2 rounded-full font-medium transition shadow-lg shadow-brand-500/30">
+                        Daftar Sekarang
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button (Placeholder for simplicity) -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-600 hover:text-gray-900 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <!-- Background Blobs -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 overflow-hidden">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-brand-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
+            <div class="absolute top-20 right-10 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-brand-100 text-brand-700 text-sm font-semibold mb-6 border border-brand-200">
+                Untuk Komunitas IT Indonesia
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 tracking-tight mb-6">
+                Identitas Digital Anda, <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-blue-400">Tanpa Biaya.</span>
+            </h1>
+            <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-600 leading-relaxed">
+                JMB adalah layanan penyedia subdomain gratis (<code class="bg-gray-100 px-1 py-0.5 rounded text-brand-600 font-mono">.jmb.my.id</code>) yang didedikasikan untuk komunitas IT Indonesia. Berjalan secara nirlaba demi kemajuan bersama.
+            </p>
+            <div class="mt-10 flex justify-center gap-4">
+                <a href="#register" class="px-8 py-3.5 rounded-full bg-brand-600 text-white font-bold text-lg hover:bg-brand-700 transition shadow-xl shadow-brand-500/30 hover:-translate-y-1">
+                    Klaim Subdomain
+                </a>
+                <a href="#about" class="px-8 py-3.5 rounded-full bg-white text-gray-700 border border-gray-200 font-bold text-lg hover:bg-gray-50 transition hover:-translate-y-1">
+                    Pelajari Lebih Lanjut
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-base text-brand-600 font-semibold tracking-wide uppercase">Mengapa JMB?</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Fitur yang kami tawarkan untuk mendukung karya Anda.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Feature 1 -->
+                <div class="group p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:border-brand-200 hover:shadow-xl hover:shadow-brand-900/5 transition-all duration-300">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center text-brand-600 mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">100% Gratis</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Layanan ini sepenuhnya gratis tanpa biaya tersembunyi. Kami beroperasi dengan skema nirlaba (non-profit).
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="group p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:border-brand-200 hover:shadow-xl hover:shadow-brand-900/5 transition-all duration-300">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center text-brand-600 mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">DNS Delegation</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Dapatkan kendali penuh atas pengaturan DNS Anda. Kelola A, CNAME, MX, dan record lainnya sesuai kebutuhan proyek Anda.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="group p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:border-brand-200 hover:shadow-xl hover:shadow-brand-900/5 transition-all duration-300">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center text-brand-600 mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Community Focused</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Dibuat khusus untuk komunitas IT Indonesia. Kami memahami kebutuhan developer, sysadmin, dan penggiat teknologi lokal.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-brand-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="lg:flex lg:items-center lg:justify-between">
+                <div class="lg:w-1/2 mb-10 lg:mb-0">
+                    <h2 class="text-3xl font-bold mb-6">Membangun Identitas Digital Bersama</h2>
+                    <p class="text-brand-100 text-lg leading-relaxed mb-6">
+                        JMB hadir sebagai solusi bagi pelajar, developer, dan komunitas teknologi di Indonesia yang membutuhkan subdomain yang profesional dan mudah diingat.
+                    </p>
+                    <p class="text-brand-100 text-lg leading-relaxed">
+                        Kami percaya bahwa akses ke teknologi pendukung identitas digital harus terbuka dan merata. Dengan domain <code class="text-white bg-white/20 px-1 rounded">.jmb.my.id</code>, kami berharap dapat mendorong lahirnya berbagai inovasi digital baru dari Tanah Air.
+                    </p>
+                </div>
+                <div class="lg:w-5/12 lg:pl-10">
+                    <div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20">
+                        <h3 class="text-xl font-bold mb-4 flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-brand-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            Non-Profit Initiative
+                        </h3>
+                        <p class="text-brand-100 text-sm">
+                            JMB tidak dikelola untuk keuntungan finansial. Seluruh operasional dikelola oleh relawan yang peduli terhadap ekosistem IT Indonesia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rules Section -->
+    <section id="rules" class="py-24 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900">Peraturan Penggunaan</h2>
+                <p class="text-gray-600 mt-2">Mari jaga ekosistem ini tetap aman dan bermanfaat.</p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+                <div class="p-8 border-b border-gray-100 flex items-start">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-red-100 text-red-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-bold text-gray-900">Tidak Ada Phishing</h3>
+                        <p class="mt-1 text-gray-600">Dilarang keras menggunakan subdomain JMB untuk situs *phishing*, penipuan, atau pengambilan data pribadi secara ilegal.</p>
+                    </div>
+                </div>
+                
+                <div class="p-8 flex items-start">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-red-100 text-red-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-bold text-gray-900">Tidak Ada Konten Ilegal</h3>
+                        <p class="mt-1 text-gray-600">Larangan keras terhadap konten yang melanggar hukum Indonesia, perjudian, SARA, pornografi, dan konten berbahaya lainnya.</p>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center text-gray-500 text-sm mt-6">Pelanggaran aturan akan mengakibatkan penghapusan subdomain tanpa pemberitahuan sebelumnya.</p>
+        </div>
+    </section>
+
+    <!-- PSL Status Section -->
+    <section id="status" class="py-16 bg-blue-50 border-t border-blue-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between bg-white p-6 md:p-8 rounded-xl shadow-sm border border-blue-100">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <div class="bg-blue-100 p-3 rounded-full mr-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-900">Status Public Suffix List (PSL)</h3>
+                        <p class="text-gray-600 text-sm">Saat ini kami sedang dalam proses pendaftaran ke PSL.</p>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-yellow-100 text-yellow-800">
+                        <span class="w-2 h-2 mr-2 bg-yellow-400 rounded-full animate-pulse"></span>
+                        Pending
+                    </span>
+                    <p class="ml-4 text-sm text-gray-500 hidden md:block">Ini akan meningkatkan privasi cookie pada browser modern.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Register Section Placeholder -->
+    <section id="register" class="py-24 bg-white text-center">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Siap mendapatkan alamat Anda?</h2>
+            <p class="text-gray-600 mb-8">Bergabunglah dengan ratusan anggota komunitas IT lainnya. Subdomain gratis menanti Anda.</p>
+            
+            <!-- Simulasi Input -->
+            <div class="max-w-md mx-auto flex gap-2">
+                <input type="text" placeholder="nama-anda" class="flex-1 appearance-none border border-gray-300 rounded-l-lg py-3 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500" disabled>
+                <span class="bg-gray-100 border border-l-0 border-gray-300 text-gray-500 rounded-r-lg py-3 px-4 flex items-center text-sm font-mono whitespace-nowrap">
+                    .jmb.my.id
+                </span>
+            </div>
+            
+            <div class="mt-8">
+                <button class="bg-brand-600 text-white font-bold py-3 px-10 rounded-full hover:bg-brand-700 transition shadow-lg shadow-brand-500/30 cursor-not-allowed opacity-80" title="Pendaftaran akan segera dibuka">
+                    Daftar (Coming Soon)
+                </button>
+            </div>
+            <p class="text-xs text-gray-400 mt-4">Sistem pendaftaran masih dalam tahap pengembangan.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-6 h-6 bg-brand-600 rounded flex items-center justify-center text-white font-bold text-xs">J</div>
+                        <span class="font-bold text-white text-lg">JMB</span>
+                    </div>
+                    <p class="text-sm text-gray-500 max-w-xs">
+                        Penyedia subdomain gratis nirlaba untuk mendukung ekosistem teknologi dan komunitas IT di Indonesia.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Layanan</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Subdomain Gratis</a></li>
+                        <li><a href="#" class="hover:text-white transition">DNS Management</a></li>
+                        <li><a href="#" class="hover:text-white transition">API Docs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Dukungan</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Syarat & Ketentuan</a></li>
+                        <li><a href="#" class="hover:text-white transition">Kebijakan Privasi</a></li>
+                        <li><a href="#" class="hover:text-white transition">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
+                <p>&copy; 2026 JMB Project. Seluruh hak cipta dilindungi.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="https://github.com/hamz1080p" class="hover:text-white">GitHub</a>
+                    <a href="https://www.instagram.com/hamz1080p/" class="hover:text-white">Instagram</a>
+                    <a href="https://www.tiktok.com/@hamz1080p/" class="hover:text-white">Tiktok</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
